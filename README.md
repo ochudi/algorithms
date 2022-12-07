@@ -1,1 +1,3 @@
-# algorithms_and_complexity_analysis
+# Algorithms and Complexity Analysis
+
+This repository contains python codes implemented through my course of study of Algorithms and Complexity Analysis.
