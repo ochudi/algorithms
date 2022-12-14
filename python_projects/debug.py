@@ -1,4 +1,4 @@
-# Merge Sort
+''' # Merge Sort
 
 def merge_sort(my_list):
     if (len(my_list) > 1):
@@ -36,4 +36,35 @@ def merge_sort(my_list):
 
 random_list = [20, 4, 5, 40, 10]
 merge_sort(random_list)
-print(random_list)
+print(random_list) '''
+
+# Kazeem's Attempt
+
+def decodeString(s):
+    stack = []
+    for e in s:
+        
+        if (e != "]"):
+            stack.append(e)
+
+        else:
+            st = ""
+            while (stack[-1] != "["):
+                st = stack.pop() + st
+            stack.pop()
+
+            intt = ""
+            while (stack and stack[-1].isdigit()):
+                intt = stack.pop() + intt
+
+            stack.append(int(intt) * st)
+
+    return "".join(stack)
+
+
+#s = "2[abc]3[cd]ef"
+# s = "3[a2[c]]"
+# s = "3[a]2[bc]"
+s = "2[b2[wv]a2[kb]]"
+
+decodeString(s)
